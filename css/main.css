@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "molle";
+    src: url("../Fonts/Molle-Italic.ttf");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "kerek";
+    src: url("../Fonts/Ranchers/Ranchers-Regular.ttf");
+    font-weight: 200;
+}
+
+html {
+      background-image: url("../img/sziv1.jpg");
+}
+
+.kep {
+    width: 19.2%;
+    border-style: solid;
+    }
+
+.kincso {
+    border-color: aqua;
+}
+
+.csenge {
+    border-color: deeppink;
+}
+
+.csongor {
+    border-color: darkorange;
+}
+
+.brigitta {
+    border-color: gold;
+}
+
+.gergo {
+    border-color: blue;
+}
+
+.bsz
+    {padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "molle";
+    text-align: center;
+}
+
+.nsz{
+    font-family: "kerek";
+    text-align: center;
+}
+}
