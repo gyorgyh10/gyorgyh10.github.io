@@ -1,53 +1,171 @@
-@font-face {
-    font-family: "molle";
-    src: url("../Fonts/Molle-Italic.ttf");
-    font-weight: 500;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,800&display=swap');
+body {
+    margin: 0;
+    background: url("../pics/bg-body.jpg") fixed;
+    font-family: 'Nunito', sans-serif;
 }
 
-@font-face{
-    font-family: "kerek";
-    src: url("../Fonts/Ranchers/Ranchers-Regular.ttf");
-    font-weight: 200;
+* {box-sizing: border-box}
+
+.wrapper {
+    max-width: 1000px;
+    margin:  0 auto;
 }
 
-html {
-      background-image: url("../img/sziv1.jpg");
+header{
+    background: url("../pics/fejlec-3d.png");
+    color: white;
+    font-size: 50px;
+    padding: 0px 20px 20px 40px;
+    text-align: right;
+    font-weight: 800;
+     height: 220px; 
 }
 
-.kep {
-    width: 19%;
-    border-style: solid;
+.content {
+    background:rgb(10, 10, 11);
+}
+
+.content::after,
+main::after,
+footer::after {
+	content: "";
+	clear: both;
+	display: table
+}
+
+nav{
+    width: 25%;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    line-height: 2.8;
+    margin:0;
+    padding-right:35px;
+    padding-top: 35px;
+}
+
+nav li {
+    border-bottom: dashed white;
+    margin:0;
+}
+
+nav li a {
+    color: white;
+    padding: 10 px;
+    text-decoration: none;
+    font-size: larger;
+    text-shadow: 0 0 5px white;
+    display: block;
+}
+nav li:hover {
+    padding-left:35px;
+    background-color: rgb(39, 38, 36);
+}
+
+main {
+    width: 75%;
+    float: left;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+.float-left
+{ float: left;
+  padding: 0 20px 0 0;
+}
+
+.float-right {
+    float: right;
+    padding: 0 0 0 20px;
+}
+
+.jobb{
+    width: 256px;
+    height: 280px;
+}
+
+footer {
+    padding: 10px 0 10px 0;
+    color: black;
+}
+
+.elso, .masodik {
+    margin: 0px;
+    padding: 0px;
+    /* padding-left: 25px; */
+}
+
+.masodik {
+    text-decoration: underline;
+}
+.osszeadas {
+    float: left;
+    max-width: 20%;
+    text-align: right;
+    font-size: 30px;
+    padding-right: 25px;
+}
+
+.osszeg {
+    text-align: right;
+    font-size: 30px;
+    width: 95px;
+    margin-bottom: 20px;    
+}
+
+.input[type="text"]:focus {
+    color:black;
+}
+
+ .megoldas{
+    font-size: 30px; 
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 4px black;
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+ }
+
+ .megoldasK{
+    background-color: rgb(78 195 166);
+    color: rgb(253 194 248);
+ }
+
+ .megoldasG{
+     background-color: gold;
+     color:black;
+ }
+
+  .megoldasK:hover {
+     background-color: rgb(253 194 248);
+    color:  rgb(78 195 166);
+ }
+
+ .megoldasG:hover {
+    background-color: black;
+    color: gold;
+}
+ .kep {
+     width: 256px;
+     height: 256px;
+     /* padding: 0 20px 0px 0; */
+     position: relative;
+    bottom: 30px;
+    right: 20px;
     }
 
-.kincso {
-    border-color: aqua;
+.kep2{
+    width: 256px;
+    height: 256px;
+    padding: 0 20px 0px 20px;
 }
 
-.csenge {
-    border-color: deeppink;
-}
-
-.csongor {
-    border-color: darkorange;
-}
-
-.brigitta {
-    border-color: gold;
-}
-
-.gergo {
-    border-color: blue;
-}
-
-.bsz
-    {padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: "molle";
-    text-align: center;
-}
-
-.nsz{
-    font-family: "kerek";
-    text-align: center;
-}
+.cica:hover{
+    cursor: pointer;
 }
